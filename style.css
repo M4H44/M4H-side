@@ -1,45 +1,98 @@
 body {
   background-color: lightblue;
   margin: 0;
-  padding: 10px;
+  padding: 5vw 2vw;
   font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
+/* Hlavný obsah je vždy odsadený od okraja */
+main, section, footer, header, nav, aside {
+  box-sizing: border-box;
+}
+
+/* Responzívny nadpis */
+h1, h2, h3 {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: clamp(20px, 4vw, 36px);
+}
+
+/* Červené hlavné písmo v main */
 main p {
   font-weight: bold !important;
-  font-size: clamp(16px, 3vw, 24px) !important;
+  font-size: clamp(16px, 4vw, 32px) !important;
   color: red !important;
 }
 
+/* Päta menšia, čierna */
 footer p {
-  color: black !important;       /* čierna farba textu */
-  font-weight: normal !important; /* normálna váha písma */
-  font-size: clamp(10px, 1.5vw, 12px) !important; /* menšia a responzívna veľkosť */
+  color: black !important;
+  font-weight: normal !important;
+  font-size: clamp(10px, 2vw, 14px) !important;
+  text-align: center;
+  margin-top: 40px;
 }
 
-/* Štýl tlačidla */
+/* Navigácia v jednom riadku a s medzerami */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: darkblue;
+  font-weight: 600;
+  font-size: clamp(14px, 2vw, 22px);
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ff3333;
+}
+
+/* Bočný panel */
+aside {
+  background-color: #d0e7f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Responzívne tlačidlo */
 button#heart-btn {
-  font-size: clamp(14px, 3vw, 20px);
-  padding: 8px 16px;
+  font-size: clamp(14px, 3vw, 24px);
+  padding: 10px 20px;
   cursor: pointer;
   border: none;
   border-radius: 5px;
   background-color: #ff6666;
   color: white;
   transition: background-color 0.3s ease;
+  margin-top: 16px;
 }
 
 button#heart-btn:hover {
   background-color: #ff3333;
 }
 
-/* Srdiečka */
+/* Animované srdiečka */
 .heart {
   position: fixed;
   bottom: 50px;
   font-size: 24px;
   animation: flyUp 2s forwards;
   pointer-events: none;
+  z-index: 999;
 }
 
 @keyframes flyUp {
@@ -50,5 +103,19 @@ button#heart-btn:hover {
   100% {
     opacity: 0;
     transform: translateY(-200px) scale(1.5);
+  }
+}
+
+/* Menšie obrazovky – väčšie okraje hore/dole */
+@media (max-width: 500px) {
+  body {
+    padding: 7vw 2vw;
+  }
+  nav ul {
+    gap: 10px;
+    font-size: 18px;
+  }
+  main p {
+    font-size: clamp(16px, 7vw, 24px) !important;
   }
 }
