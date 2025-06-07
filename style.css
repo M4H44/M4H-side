@@ -121,8 +121,8 @@ button#heart-btn:hover {
 }
 .profil {
   display: block;
-  max-width: 300px;
-  width: 90%;
+  max-width: 150px;
+  width: 45%;
   height: auto;
   margin: 20px auto 20px auto;
   border-radius: 12px;
