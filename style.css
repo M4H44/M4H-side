@@ -7,7 +7,7 @@ body p {
   color: red !important;
 }
 footer p {
-  color: black; /* alebo iná farba, ktorú chceš */
-  font-weight: normal; /* ak nechceš tučné */
-  font-size: 16px; /* prípadne menšia veľkosť */
+  color: black !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
 }
