@@ -89,7 +89,7 @@ button#heart-btn:hover {
 .heart {
   position: fixed;
   bottom: 50px;
-  font-size: 24px;
+  font-size: 48px;
   animation: flyUp 2s forwards;
   pointer-events: none;
   z-index: 999;
