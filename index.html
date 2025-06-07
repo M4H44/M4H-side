@@ -52,6 +52,30 @@
     <!-- Päta stránky – informácie ako copyright, kontakt, odkazy -->
     <p>&copy; 2025 Martin Dudu. Všetky práva vyhradené.</p>
   </footer>
+  <script>
+  const btn = document.getElementById('heart-btn');
+
+  btn.addEventListener('click', () => {
+    for(let i = 0; i < 10; i++) {
+      createHeart();
+    }
+  });
+
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.textContent = '❤️';
+
+    heart.style.left = (window.innerWidth / 2 + (Math.random() * 200 - 100)) + 'px';
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 2000);
+  }
+</script>
+
 
 </body>
 </html>
