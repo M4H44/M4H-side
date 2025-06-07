@@ -9,5 +9,5 @@ main p {
 footer p {
   color: black !important;   /* čierna farba textu */
   font-weight: normal !important;  /* normálna váha písma */
-  font-size: 16px !important; /* menšia veľkosť písma */
+  font-size: 12px !important; /* menšia veľkosť písma */
 }
