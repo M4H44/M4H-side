@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"> <!-- Kódovanie znakov (UTF-8 podporuje aj diakritiku) -->
   <title>Bubu a Dudu stránka</title> <!-- Názov stránky (zobrazí sa v záložke prehliadača) -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 
 <body> <!-- Telo stránky (všetko, čo vidíš v prehliadači) -->
 
@@ -22,21 +22,30 @@
     </ul>
   </nav>
 
-  <main>
+  <main id="domov">
     <!-- Hlavný obsah stránky -->
     <h2>Vitajte!</h2>
     <p>Bubu má rád Dudu lebo Dudu je najlepší na svete!</p>
-    
   </main>
 
-  <aside>
-    <!-- Bočný panel – napríklad doplnkové informácie, odkazy, reklamy -->
-    <h3>Novinky</h3>
-    <ul>
-      <li>Bubu zhorel obed opäť raz.</li>
-      <li>Nevadí už sme si zvykli.</li>
-    </ul>
-  </aside>
+  <section id="o-nas">
+    <!-- Sekcia O nás -->
+    <h2>O nás</h2>
+    <aside>
+      <!-- Bočný panel – napríklad doplnkové informácie, odkazy, reklamy -->
+      <h3>Novinky</h3>
+      <ul>
+        <li>Bubu zhorel obed opäť raz.</li>
+        <li>Nevadí už sme si zvykli.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="kontakt">
+    <!-- Sekcia Kontakt -->
+    <h2>Kontakt</h2>
+    <p>Kontaktujte nás na: email@priklad.sk</p>
+  </section>
 
   <footer>
     <!-- Päta stránky – informácie ako copyright, kontakt, odkazy -->
