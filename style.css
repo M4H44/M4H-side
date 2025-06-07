@@ -128,3 +128,16 @@ button#heart-btn:hover {
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.09);
 }
+#o-nas a {
+  display: inline-block;
+  margin: 12px 0;
+  color: #0051cc;
+  font-weight: bold;
+  text-decoration: underline dotted;
+  transition: color 0.2s;
+}
+
+#o-nas a:hover {
+  color: #ff3333;
+}
+
