@@ -11,3 +11,21 @@ footer p {
   font-weight: normal !important;  /* normálna váha písma */
   font-size: 12px !important; /* menšia veľkosť písma */
 }
+.heart {
+  position: fixed;
+  bottom: 50px;
+  font-size: 24px;
+  animation: flyUp 2s forwards;
+  pointer-events: none;
+}
+
+@keyframes flyUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px) scale(1.5);
+  }
+}
