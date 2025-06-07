@@ -6,3 +6,8 @@ body p {
   font-size: 24px !important;
   color: red !important;
 }
+footer p {
+  color: black; /* alebo iná farba, ktorú chceš */
+  font-weight: normal; /* ak nechceš tučné */
+  font-size: 16px; /* prípadne menšia veľkosť */
+}
